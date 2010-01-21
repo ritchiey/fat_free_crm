@@ -4,11 +4,11 @@
     %meta{ "http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %title Fat Free CRM Administration
     == <!-- #{controller.controller_name} : #{controller.action_name} -->
-    = stylesheet_link_tag "screen", "facebox.css", :cache => "cache/all"
+    = stylesheet_link_tag "screen", "facebox.css"
     %style= yield :styles
 
-    = javascript_include_tag :defaults, :cache => "cache/all"
-    = javascript_include_tag "crm_classes.js", "facebox.js", :cache => "cache/classes"
+    = javascript_include_tag :defaults
+    = javascript_include_tag "crm_classes.js", "facebox.js"
     %script{:type => "text/javascript"}= yield :javascript
 
   %body.admin
